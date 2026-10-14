@@ -1,0 +1,27 @@
+{
+  "n_samples": 91,
+  "n_train": 63,
+  "n_test": 28,
+  "alert_threshold": 0.8515,
+  "block_threshold": 0.9515,
+  "ml_precision": 1.0,
+  "ml_recall": 0.8333,
+  "ml_false_positive_rate": 0.0,
+  "ml_accuracy": 0.9286,
+  "ml_confusion": {
+    "tp": 10,
+    "fp": 0,
+    "tn": 16,
+    "fn": 2
+  },
+  "rule_precision": 1.0,
+  "rule_recall": 1.0,
+  "rule_false_positive_rate": 0.0,
+  "rule_confusion": {
+    "tp": 40,
+    "fp": 0,
+    "tn": 51,
+    "fn": 0
+  },
+  "trained_at": "2026-10-14T08:08:42Z"
+}

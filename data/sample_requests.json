@@ -1,0 +1,1254 @@
+{
+  "description": "Labelled sample traffic for the AI-WAF lab. label 0 = benign, 1 = attack. Timestamps are unix seconds; rate features are derived per client using a 60s trailing window. Test only against systems you own or are authorised to test.",
+  "window_seconds": 60,
+  "requests": [
+    {
+      "timestamp": 1700000000,
+      "client": "10.0.0.10",
+      "method": "GET",
+      "path": "/",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000001,
+      "client": "10.0.0.10",
+      "method": "GET",
+      "path": "/products",
+      "query": "category=shoes&page=1",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000001,
+      "client": "10.0.0.10",
+      "method": "GET",
+      "path": "/static/css/app.css",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000002,
+      "client": "10.0.0.10",
+      "method": "GET",
+      "path": "/static/js/app.js",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000002,
+      "client": "10.0.0.10",
+      "method": "GET",
+      "path": "/api/products",
+      "query": "page=1&limit=20",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000003,
+      "client": "10.0.0.10",
+      "method": "GET",
+      "path": "/api/products/42",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000004,
+      "client": "10.0.0.10",
+      "method": "GET",
+      "path": "/search",
+      "query": "q=running+shoes",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000005,
+      "client": "10.0.0.10",
+      "method": "GET",
+      "path": "/search",
+      "query": "q=men%27s+trail+shoes",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000006,
+      "client": "10.0.0.10",
+      "method": "GET",
+      "path": "/basket",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000007,
+      "client": "10.0.0.10",
+      "method": "POST",
+      "path": "/api/login",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "content-type": "application/json",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "{\"email\":\"alice@example.com\",\"password\":\"demo-pass-123\"}",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000008,
+      "client": "10.0.0.10",
+      "method": "GET",
+      "path": "/api/user/profile",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000009,
+      "client": "10.0.0.10",
+      "method": "PUT",
+      "path": "/api/user/profile",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "content-type": "application/json",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "{\"displayName\":\"Alice\",\"newsletter\":true}",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000010,
+      "client": "10.0.0.10",
+      "method": "GET",
+      "path": "/image/logo.png",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000011,
+      "client": "10.0.0.10",
+      "method": "GET",
+      "path": "/comments",
+      "query": "page=1&order=asc",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000012,
+      "client": "10.0.0.10",
+      "method": "POST",
+      "path": "/api/comments",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "content-type": "application/json",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "{\"text\":\"Great product, fast shipping!\"}",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000013,
+      "client": "10.0.0.10",
+      "method": "GET",
+      "path": "/api/search",
+      "query": "q=select+size+guide",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000014,
+      "client": "10.0.0.10",
+      "method": "GET",
+      "path": "/api/search",
+      "query": "q=how+to+choose+shoes",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000015,
+      "client": "10.0.0.10",
+      "method": "GET",
+      "path": "/checkout",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000016,
+      "client": "10.0.0.10",
+      "method": "POST",
+      "path": "/api/orders",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "content-type": "application/json",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "{\"item\":42,\"qty\":1,\"coupon\":\"\"}",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000017,
+      "client": "10.0.0.10",
+      "method": "GET",
+      "path": "/api/orders/1001",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000018,
+      "client": "10.0.0.10",
+      "method": "GET",
+      "path": "/api/payment/methods",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000020,
+      "client": "10.0.0.10",
+      "method": "POST",
+      "path": "/api/feedback",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "content-type": "application/json",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "{\"rating\":5,\"comment\":\"love it\"}",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000025,
+      "client": "10.0.0.10",
+      "method": "GET",
+      "path": "/",
+      "query": "lang=en",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000030,
+      "client": "10.0.0.10",
+      "method": "GET",
+      "path": "/category/shoes",
+      "query": "page=2",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000031,
+      "client": "10.0.0.10",
+      "method": "GET",
+      "path": "/category/shoes",
+      "query": "page=3",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000040,
+      "client": "10.0.0.11",
+      "method": "GET",
+      "path": "/robots.txt",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/119.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000041,
+      "client": "10.0.0.11",
+      "method": "GET",
+      "path": "/sitemap.xml",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/119.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000045,
+      "client": "10.0.0.12",
+      "method": "GET",
+      "path": "/about",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone) Safari/605.1",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000046,
+      "client": "10.0.0.12",
+      "method": "GET",
+      "path": "/contact",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone) Safari/605.1",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000047,
+      "client": "10.0.0.12",
+      "method": "POST",
+      "path": "/api/contact",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone) Safari/605.1",
+        "content-type": "application/json",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "{\"email\":\"bob@example.com\",\"message\":\"please contact me about an order\"}",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000050,
+      "client": "10.0.0.10",
+      "method": "GET",
+      "path": "/api/products",
+      "query": "sort=price-asc&category=bags",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000051,
+      "client": "10.0.0.10",
+      "method": "GET",
+      "path": "/api/products",
+      "query": "sort=price-desc&category=bags",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000052,
+      "client": "10.0.0.10",
+      "method": "GET",
+      "path": "/search",
+      "query": "q=%3C3+valentines+special",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000055,
+      "client": "10.0.0.10",
+      "method": "GET",
+      "path": "/api/recommendations",
+      "query": "limit=8",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000058,
+      "client": "10.0.0.10",
+      "method": "DELETE",
+      "path": "/api/basket/item/7",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000060,
+      "client": "10.0.0.10",
+      "method": "GET",
+      "path": "/api/notifications",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000061,
+      "client": "10.0.0.10",
+      "method": "GET",
+      "path": "/api/notifications",
+      "query": "unread=true",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000065,
+      "client": "10.0.0.10",
+      "method": "PATCH",
+      "path": "/api/cart",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "content-type": "application/json",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "{\"coupon\":\"SPRING10\"}",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000070,
+      "client": "192.168.1.50",
+      "method": "GET",
+      "path": "/help/faq",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone) Safari/605.1",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000071,
+      "client": "192.168.1.50",
+      "method": "GET",
+      "path": "/help/shipping",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone) Safari/605.1",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000072,
+      "client": "192.168.1.50",
+      "method": "GET",
+      "path": "/help/returns",
+      "query": "section=size",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone) Safari/605.1",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000080,
+      "client": "10.0.0.10",
+      "method": "POST",
+      "path": "/api/search",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "content-type": "application/json",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "{\"query\":\"blue running shoes\",\"filters\":{\"size\":42}}",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000082,
+      "client": "10.0.0.10",
+      "method": "GET",
+      "path": "/api/products/42/reviews",
+      "query": "page=1",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000083,
+      "client": "10.0.0.10",
+      "method": "GET",
+      "path": "/api/products/42/reviews",
+      "query": "page=2",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000090,
+      "client": "10.0.0.11",
+      "method": "GET",
+      "path": "/favicon.ico",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/119.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000095,
+      "client": "10.0.0.11",
+      "method": "GET",
+      "path": "/api/health",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/119.0",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "accept-language": "en-US,en;q=0.9",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000100,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/api/products",
+      "query": "id=1%27+OR+%271%27%3D%271",
+      "headers": {
+        "user-agent": "sqlmap/1.7.2"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000101,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/search",
+      "query": "q=1+UNION+SELECT+username%2Cpassword+FROM+users",
+      "headers": {
+        "user-agent": "sqlmap/1.7.2"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000102,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/api/products",
+      "query": "category=books%3B+DROP+TABLE+users--",
+      "headers": {
+        "user-agent": "sqlmap/1.7.2"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000103,
+      "client": "203.0.113.66",
+      "method": "POST",
+      "path": "/api/login",
+      "query": "",
+      "headers": {
+        "user-agent": "sqlmap/1.7.2",
+        "content-type": "application/json"
+      },
+      "body": "{\"email\":\"admin@x.com' OR '1'='1\",\"password\":\"x\"}",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000104,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/api/users",
+      "query": "id=1%27+AND+SLEEP(5)--",
+      "headers": {
+        "user-agent": "sqlmap/1.7.2"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000105,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/comments",
+      "query": "search=%27%3BSELECT+*+FROM+accounts+WHERE+%271%27%3D%271",
+      "headers": {
+        "user-agent": "sqlmap/1.7.2"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000106,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/api/products",
+      "query": "id=11+UNION+ALL+SELECT+NULL%2CNULL--",
+      "headers": {
+        "user-agent": "sqlmap/1.7.2"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000107,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/api/products",
+      "query": "id=%27+UNION+SELECT+table_name+FROM+information_schema.tables--",
+      "headers": {
+        "user-agent": "sqlmap/1.7.2"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000108,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/api/products",
+      "query": "id=1111+AND+1%3D1+ORDER+BY+10--",
+      "headers": {
+        "user-agent": "sqlmap/1.7.2"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000109,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/search",
+      "query": "q=%27%3B+DROP+TABLE+products+--",
+      "headers": {
+        "user-agent": "sqlmap/1.7.2"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000110,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/search",
+      "query": "q=%3Cscript%3Ealert(1)%3C%2Fscript%3E",
+      "headers": {
+        "user-agent": "Mozilla/5.0 netcraft exploratory"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000111,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/comments",
+      "query": "text=%3Cimg+src%3Dx+onerror%3Dalert(document.cookie)%3E",
+      "headers": {
+        "user-agent": "Mozilla/5.0 netcraft exploratory"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000112,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/redirect",
+      "query": "url=javascript%3Aalert(1)",
+      "headers": {
+        "user-agent": "Mozilla/5.0 netcraft exploratory"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000113,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/search",
+      "query": "q=%3Csvg+onload%3Dalert(1)%3E",
+      "headers": {
+        "user-agent": "Mozilla/5.0 netcraft exploratory"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000114,
+      "client": "203.0.113.66",
+      "method": "POST",
+      "path": "/api/comments",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 netcraft exploratory",
+        "content-type": "application/json"
+      },
+      "body": "{\"text\":\"<iframe src=//evil.example></iframe>\"}",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000115,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/profile",
+      "query": "name=%22%3E%3Cscript%3Econfirm(1)%3C%2Fscript%3E",
+      "headers": {
+        "user-agent": "Mozilla/5.0 netcraft exploratory"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000116,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/search",
+      "query": "q=%3Cscript+src%3Dhttps%3A%2F%2Fevil.example%2Fx.js%3E%3C%2Fscript%3E",
+      "headers": {
+        "user-agent": "Mozilla/5.0 netcraft exploratory"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000117,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/api/reviews",
+      "query": "text=%3Csvg%2Fonload%3Dalert(1)%3E",
+      "headers": {
+        "user-agent": "Mozilla/5.0 netcraft exploratory"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000118,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/download",
+      "query": "file=..%2F..%2F..%2Fetc%2Fpasswd",
+      "headers": {
+        "user-agent": "python-requests/2.31.0"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000119,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/image",
+      "query": "path=../../etc/shadow",
+      "headers": {
+        "user-agent": "python-requests/2.31.0"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000120,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/files",
+      "query": "name=..%5C..%5Cwindows%5Csystem32%5Cconfig",
+      "headers": {
+        "user-agent": "python-requests/2.31.0"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000121,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/static/%2e%2e/%2e%2e/etc/hosts",
+      "query": "",
+      "headers": {
+        "user-agent": "python-requests/2.31.0"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000122,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/download",
+      "query": "file=/proc/self/environ",
+      "headers": {
+        "user-agent": "python-requests/2.31.0"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000123,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/download",
+      "query": "file=%2e%2e%2f%2e%2e%2fetc%2fpasswd",
+      "headers": {
+        "user-agent": "python-requests/2.31.0"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000124,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/download",
+      "query": "file=..%2F..%2F..%2F..%2Froot%2F.ssh%2Fid_rsa",
+      "headers": {
+        "user-agent": "python-requests/2.31.0"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000130,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/page%00.html",
+      "query": "",
+      "headers": {
+        "user-agent": "Nmap Scripting Engine"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000131,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/a%zz",
+      "query": "",
+      "headers": {
+        "user-agent": "Nmap Scripting Engine"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000132,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/api/data",
+      "query": "x=%01%02%03",
+      "headers": {
+        "user-agent": "Nmap Scripting Engine"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000133,
+      "client": "203.0.113.66",
+      "method": "POST",
+      "path": "/api/upload",
+      "query": "",
+      "headers": {
+        "user-agent": "Nmap Scripting Engine",
+        "content-type": "application/x-www-form-urlencoded"
+      },
+      "body": "name=ok&file=shell.php\u0000.jpg",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000125,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/ping",
+      "query": "host=127.0.0.1%3Bcat+%2Fetc%2Fpasswd",
+      "headers": {
+        "user-agent": "curl/8.4.0"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000126,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/api/tools",
+      "query": "cmd=ls%20-la%3B%20whoami",
+      "headers": {
+        "user-agent": "curl/8.4.0"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000127,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/download",
+      "query": "cmd=%60id%60",
+      "headers": {
+        "user-agent": "curl/8.4.0"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000128,
+      "client": "203.0.113.66",
+      "method": "GET",
+      "path": "/api/eval",
+      "query": "expr=%24%28whoami%29",
+      "headers": {
+        "user-agent": "curl/8.4.0"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000200,
+      "client": "203.0.113.77",
+      "method": "POST",
+      "path": "/api/login",
+      "query": "",
+      "headers": {
+        "user-agent": "python-requests/2.31.0",
+        "content-type": "application/json"
+      },
+      "body": "{\"email\":\"admin'--\",\"password\":\"x\"}",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000201,
+      "client": "203.0.113.77",
+      "method": "GET",
+      "path": "/api/users",
+      "query": "sort=id%3BSELECT+password+FROM+admin",
+      "headers": {
+        "user-agent": "python-requests/2.31.0"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000202,
+      "client": "203.0.113.77",
+      "method": "GET",
+      "path": "/search",
+      "query": "q=%3Cbody+onload%3Dalert(1)%3E",
+      "headers": {
+        "user-agent": "python-requests/2.31.0"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000203,
+      "client": "203.0.113.77",
+      "method": "GET",
+      "path": "/redirect",
+      "query": "next=javascript:alert(document.domain)",
+      "headers": {
+        "user-agent": "python-requests/2.31.0"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000300,
+      "client": "10.0.0.99",
+      "method": "GET",
+      "path": "/api/products",
+      "query": "id=1%27+UNION+SELECT+password+FROM+admin--",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000305,
+      "client": "10.0.0.99",
+      "method": "GET",
+      "path": "/download",
+      "query": "file=..%2F..%2Fetc%2Fshadow",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0"
+      },
+      "body": "",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000310,
+      "client": "10.0.0.99",
+      "method": "POST",
+      "path": "/api/feedback",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0",
+        "content-type": "application/json"
+      },
+      "body": "{\"comment\":\"<script>alert(document.cookie)</script>\"}",
+      "label": 1
+    },
+    {
+      "timestamp": 1700000400,
+      "client": "10.0.0.11",
+      "method": "GET",
+      "path": "/api/health",
+      "query": "",
+      "headers": {
+        "user-agent": "curl/8.4.0",
+        "accept": "*/*"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000405,
+      "client": "10.0.0.11",
+      "method": "GET",
+      "path": "/",
+      "query": "",
+      "headers": {
+        "user-agent": "curl/8.4.0",
+        "accept": "*/*"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000410,
+      "client": "10.0.0.13",
+      "method": "GET",
+      "path": "/api/products",
+      "query": "page=1",
+      "headers": {
+        "user-agent": "Mozilla/5.0",
+        "accept": "*/*"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000411,
+      "client": "10.0.0.13",
+      "method": "GET",
+      "path": "/robots.txt",
+      "query": "",
+      "headers": {
+        "user-agent": "Mozilla/5.0",
+        "accept": "*/*"
+      },
+      "body": "",
+      "label": 0
+    },
+    {
+      "timestamp": 1700000415,
+      "client": "10.0.0.13",
+      "method": "POST",
+      "path": "/api/health",
+      "query": "",
+      "headers": {
+        "user-agent": "UptimeCheck/1.0",
+        "content-type": "application/json"
+      },
+      "body": "{}",
+      "label": 0
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+# --- secrets & local config -------------------------------------------------
+.env
+
+# --- virtual environment ----------------------------------------------------
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# --- tooling caches ---------------------------------------------------------
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- runtime audit database (keep data/sample_requests.json + the report) ---
+data/*.db
+data/*.db-shm
+data/*.db-wal
+
+# --- editor / OS ------------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,20 @@
+# Streamlit theming for the AI-WAF security dashboard.
+# A dark "security operations" palette; dashboard/app.py layers custom CSS on
+# top of these base colours. Command-line flags still override anything here.
+
+[theme]
+base = "dark"
+primaryColor = "#22d3ee"
+backgroundColor = "#070b16"
+secondaryBackgroundColor = "#0e1526"
+textColor = "#e8eefc"
+
+[server]
+# The dashboard renders request paths, client IPs and audit metadata, so it
+# must stay on the loopback interface (see README "Dashboard"). Passing
+# --server.address on the command line overrides this.
+address = "127.0.0.1"
+headless = true
+
+[browser]
+gatherUsageStats = false
